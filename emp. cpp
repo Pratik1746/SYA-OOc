@@ -1,0 +1,30 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+
+class Employee
+{
+    int empid;
+    char name[20];
+    float salary;
+    public:
+    void get()
+    {
+        cout<<"Enter empid name salary";
+        cin>>empid>>name>>salary;
+    }
+    void show()
+    {
+        cout<<"\nEmpid="<<empid;
+        cout<<"\nName="<<name;
+        cout<<"\nSalary="<<salary;
+    }
+};
+
+int main()
+{
+    Employee e;
+    e.get();
+    e.show();
+    return 0;
+}
